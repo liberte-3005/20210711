@@ -1,0 +1,293 @@
+body {
+	width: 950px;
+	height: auto;
+	font-family: serif;
+	color: #141716;
+
+}
+
+h1,h2,h3,h4,h5,h6 {
+	font-size: 100%;
+}
+.h_right {
+	position: relative;
+	width: 950px;
+	height: auto;
+}
+#gnav {
+	position: absolute;
+	top: -100px;
+	left: 0px;
+}
+#gnav li {
+	display: inline-block;
+	padding: 16px;
+}
+#gnav a {
+	text-decoration: none;
+	color: #fdeac0;
+}
+#gnav a:hover {
+	color: #fff;
+}
+#content {
+	width: 950px;
+}
+.plan_check {
+	position:fixed;
+	left:772px;
+	bottom:60px;
+}
+.room_check {
+	position:fixed;
+	left:869px;
+	bottom:24px;
+}
+.plan_check a:hover,.room_check a:hover {
+	opacity: 0.7;
+}
+
+#mainimg {
+	position: relative;
+}
+#mainimg p {
+	position: absolute;
+	top: 160px;
+	left: 424px;
+	color: #fff4dc;
+	font-size: 200%;
+	letter-spacing: 10px;
+	text-shadow: 0 0 10px rgba(0,0,0,5);
+}
+#mainimg span {
+	position: absolute;
+	top: 56px;
+	left: 42px;
+	color: #fff;
+	opacity: 0.7;
+	font-size: 50%;
+	letter-spacing: 0px;
+	text-shadow: 0 0 10px rgba(0,0,0,1);
+}
+
+#sec0 .main_text {
+	text-align: center;
+	margin-top: 0;
+}
+#sec0 .main_text .txt_title {
+	letter-spacing: 8px;
+	font-size: 200%;
+	border-bottom: solid 1px #990004;
+	padding-bottom: 16px ;
+	margin:40px 160px 0 160px;
+}
+#sec0 .main_text .txt_min {
+	font-size: 80%;
+}
+
+#sec1{
+	height: auto;
+	width: 950px;
+	margin: 80px auto;
+	background-image: url(https://rakuten.yado-riki.com/kiyoto/raku_new/meal/img/sec1_bg.jpg);
+      }
+
+/*1枚目*/
+@keyframes slide1 {
+	0% {left: 110%;}
+	4%{left: 0%}
+	15% {left: 0%;}
+	30% {left: 0%;}
+	45% {left: -110%;}
+	60% {left: -110%;}
+	75% {left: -110%;}
+	90% {left: -110%;}
+	100% {left: -110%;}
+}
+/*2枚目*/
+@keyframes slide2 {
+	0% {left: 110%;}
+	15% {left: 110%;}
+	30% {left: 110%;}
+	45% {left: 0%;}
+	60% {left: 0%;}
+	75% {left: -110%;}
+	90% {left: -110%;}
+	100% {left: -110%;}
+}
+/*3枚目*/
+@keyframes slide3 {
+	0% {left: 110%;}
+	15% {left: 110%;}
+	30% {left: 110%;}
+	45% {left: 110%;}
+	60% {left: 110%;}
+	75% {left: 0%;}
+	90% {left: 0%;}
+	96%{left: 0%;}
+	100% {left: -110%;}
+}
+
+
+/*画像ブロック*/
+#slide {
+	float: right;
+	position: relative;
+	width: 600px;
+	height: 450px;
+	overflow: hidden;
+	background: #fff;
+}
+.slide1,.slide2,.slide3,.slide4 {
+	position: absolute;
+	left:0px;top:0px;width: 100%;height: 100%;
+	animation-duration: 20s;
+	animation-iteration-count:infinite;
+	animation-delay: 0.1s;
+	animation-fill-mode: both;
+	transition: 0.4s;
+}
+#slide span {
+	position: absolute;
+	z-index: 1;
+	left: 0px;
+	top: 320px;
+	width: 90%;
+	height: 40px;
+	padding: 10px 5% !important;
+	background: #000;
+	background: rgba(0,0,0,0.5);
+	color: #fff;
+	font-size: 100%;
+}
+#slide:hover {
+	opacity: 0.7;
+}
+.slide1 {
+	background: url(https://img.travel.rakuten.co.jp/share/image_up/1235/LARGE/18ce154e2f492974dd518b801f742bb9e4c9a992.47.9.26.3.jpg) no-repeat center center/cover;	/*1.jpg画像の読み込み*/
+	animation-name: slide1;
+}
+.slide1:hover {
+	background: url(https://img.travel.rakuten.co.jp/share/image_up/1235/LARGE/18ce154e2f492974dd518b801f742bb9e4c9a992.47.9.26.3.jpg) no-repeat center center/cover;
+}
+.slide2 {
+	background: url(https://img.travel.rakuten.co.jp/share/image_up/1235/LARGE/efe42ac6c1de76d21f88819fd2714ccce22334ce.47.9.26.3.jpg) no-repeat center center/cover;
+	animation-name: slide2;
+}
+.slide2:hover {
+	background: url(https://img.travel.rakuten.co.jp/share/image_up/1235/LARGE/efe42ac6c1de76d21f88819fd2714ccce22334ce.47.9.26.3.jpg) no-repeat center center/cover;
+}
+.slide3 {
+	background: url(https://img.travel.rakuten.co.jp/share/image_up/1235/LARGE/a16911918da4abf50a6225a73b77a50c6726a33a.47.9.26.3.jpg) no-repeat center center/cover;
+	animation-name: slide3;
+}
+.slide3:hover {
+	background: url(https://img.travel.rakuten.co.jp/share/image_up/1235/LARGE/a16911918da4abf50a6225a73b77a50c6726a33a.47.9.26.3.jpg) no-repeat center center/cover;
+}
+
+#slide_title p{
+	width: 240px;
+	height: 120px;
+	font-size: 80%;
+	padding: 72px;
+}
+
+
+#sec2 {
+	background: #867143;
+	background-image: url(https://rakuten.yado-riki.com/kiyoto/raku_new/meal/img/sec5_bg.jpg);
+	width: 100%;
+	height: 500px;
+}
+ #sec2 p{
+	color: #fff;
+	font-size: 90%;
+	padding: 0 40px;
+}
+#sec3 {
+	background:linear-gradient(180deg,#000, #141716);
+	width: auto;
+	height: 680px;
+	margin-top: -32px;
+}
+
+
+#sec3 p {
+	text-align: center;
+	line-height:200%;
+	padding-top: 80px;
+	color: #fff;
+	font-size: 150%;
+	font-weight: lighter;
+}
+
+
+.gallery li {
+	float: left;
+	width: 220px;
+	height: 130px;
+	overflow: hidden;
+	margin-left: -12px;
+	padding-left: 0;
+	list-style: none;
+	border: solid 6px #141716;
+}
+.gallery li img{
+	width: 100%;
+}
+
+#sec4 p {
+	text-align: right;
+	font-size: 70%;
+	padding-right: 32px;
+	margin-top: -80px;
+	margin-bottom: 160px;
+}
+
+
+
+
+#last_area #bnr_area {
+	clear: left;
+	text-align: center;
+	margin-top: 56px;
+	padding-bottom: 0;
+}
+#footer {
+	background-image: url(img/f_bg.png);
+	width: 100%;
+	height: 350px;
+	color: #fff;
+}
+.innr {
+	padding-top: 140px;
+}
+.f_ad {
+	margin: 0 24px;
+	display: inline-block;
+	font-size: 90%;
+}
+#f_navi {
+	position: relative;
+}
+#f_navi li {
+	display: inline;
+}
+#f_navi a {
+	color: #fff;
+	padding-right: 16px;
+	font-size: 70%;
+	text-decoration: none;
+}
+#f_navi a:hover {
+	text-decoration: underline;
+	opacity: 0.7;
+}
+.f_btn_top {
+	position: absolute;
+	top: 48px;
+	right: 140px;
+	color: #fff4dc;
+	font-size: 70%;
+
+}
